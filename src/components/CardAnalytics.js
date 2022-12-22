@@ -10,17 +10,17 @@ export const CardAnalytics = () =>
                 <span className='title'>Analytics</span>
             </Col>
             <Col xs={12} className="grid-col mb-3">
-                <span className='subtitle'>Time since last analytics table generation</span>
+                <span className='subtitle mb-1'>Time since last analytics table generation</span>
                 <span className='text-muted'>2187 h, 58 m, 7 s</span>
                 <Divider/>
             </Col>
             <Col xs={12} className="grid-col mb-3">
-                <span className='subtitle'>Last analytics table generation</span>
+                <span className='subtitle mb-1'>Last analytics table generation</span>
                 <span className='text-muted'>2187 h, 58 m, 7 s</span>
                 <Divider/>
             </Col>
             <Col xs={12} className="grid-col mb-3">
-                <span className='subtitle'>Server date</span>
+                <span className='subtitle mb-1'>Server date</span>
                 <span className='text-muted'>2187 h, 58 m, 7 s</span>
                 <Divider/>
             </Col>
