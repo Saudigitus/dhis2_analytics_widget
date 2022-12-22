@@ -8,6 +8,11 @@
     "icons": {
         "48": "favicon-48x48.png"
     },
+    "developer": {
+        "name": "Saudigitus",
+        "email": "info@saudigitus.org",
+        "url": "https://saudigitus.org/"
+    },
     "manifest.webapp": {
         "name": "dhis2_analytics_widget",
         "description": "It's a dhis2 dashboard application.",
