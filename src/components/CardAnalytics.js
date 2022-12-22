@@ -12,9 +12,13 @@ export const CardAnalytics = () => {
     return (
         <div className='card-analytics'>
             {
-                loading ? <CircularLoader small /> :
+                loading ?
+                    <div className='isLoading'>
+                        <CircularLoader/>
+                    </div>
+                    :
                     <Row className='w-100'>
-                        <Col xs={12} className="mb-5">
+                        <Col xs={12} className="mb-4">
                             <span className='title'>Analytics</span>
                         </Col>
                         {
