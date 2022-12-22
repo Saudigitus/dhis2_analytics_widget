@@ -1,0 +1,44 @@
+{
+    "name": "dhis2-analytics",
+    "description": "It's a dhis2 dashboard application.",
+    "homepage": ".",
+    "version": "0.1.0",
+    "private": true,
+    "license": "MIT",
+    "icons": {
+        "48": "favicon-48x48.png"
+    },
+    "manifest.webapp": {
+        "name": "dhis2-analytics",
+        "description": "It's a dhis2 dashboard application.",
+        "launch_path": "index.html",
+        "appType": "DASHBOARD_WIDGET",
+        "activities": {
+            "dhis": {
+                "href": "*"
+            }
+        }
+    },
+    "dependencies": {
+        "@dhis2/ui-core": "^3.6.3",
+        "bootstrap": "4.6.0",
+        "react": "^16.8.6",
+        "react-bootstrap": "^2.7.0",
+        "react-dom": "^16.8.6",
+        "typeface-roboto": "^0.0.54"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "prebuild": "rimraf build",
+        "build": "react-scripts build && d2-manifest package.json build/manifest.webapp",
+        "postbuild": "rimraf app-name.zip && cd build && bestzip ../app-name.zip *",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "devDependencies": {
+        "bestzip": "^2.1.4",
+        "d2-manifest": "^1.0.0",
+        "react-scripts": "3.0.1",
+        "rimraf": "^2.6.3"
+    }
+}

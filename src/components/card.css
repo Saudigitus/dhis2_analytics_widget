@@ -1,0 +1,33 @@
+.card-analytics {
+    width: 370px;
+    height: auto;
+    padding: 1rem;
+    background-color: white;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card-analytics .title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 15px;
+    color: #000000;
+}
+
+.card-analytics .subtitle{
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+line-height: 13px;
+}
+
+.grid-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-muted{
+    font-size: 0.8rem;
+}
