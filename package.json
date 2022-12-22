@@ -14,7 +14,7 @@
         "url": "https://saudigitus.org/"
     },
     "manifest.webapp": {
-        "name": "dhis2_analytics_widget",
+        "name": "dhis2 analytics widget",
         "description": "It's a dhis2 dashboard application.",
         "launch_path": "index.html",
         "appType": "DASHBOARD_WIDGET",
@@ -37,7 +37,7 @@
         "start": "react-scripts start",
         "prebuild": "rimraf build",
         "build": "react-scripts build && d2-manifest package.json build/manifest.webapp",
-        "postbuild": "rimraf app-name.zip && cd build && bestzip ../app-name.zip *",
+        "postbuild": "rimraf dhis2-analytics-widget.zip && cd build && bestzip ../dhis2-analytics-widget.zip *",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
