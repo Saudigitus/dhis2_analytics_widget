@@ -1,0 +1,43 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { baseUrl, requestHeaders } from "../api/request";
+import { dateFormater } from "../utils/dateFormater";
+
+const useFetch = () => {
+    const [data, setData] = useState(null);
+    const [loading, setLoadig] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        const fetch = async () => {
+            await axios.get(baseUrl(), requestHeaders())
+                .then(response => {
+                    setLoadig(false);
+                    const requiredData = [
+                        {
+                            "name": "Interval Since Last AnalyticsTable Success",
+                            "value": response.data.intervalSinceLastAnalyticsTableSuccess
+                        },
+                        {
+                            "name": "Last Analytics Table Success",
+                            "value": dateFormater(new Date(response.data.lastAnalyticsTableSuccess))
+                        },
+                        {
+                            "name": "Server Date",
+                            "value":dateFormater(new Date(response.data.serverDate))
+                        }
+                    ];
+                    setData(requiredData)
+                })
+                .catch(err => {
+                    setLoadig(false);
+                    setError(err)
+                })
+        }
+        fetch()
+    }, [])
+
+    return { data, loading, error }
+}
+
+export { useFetch }
