@@ -1,5 +1,5 @@
 {
-    "name": "dhis2-analytics",
+    "name": "dhis2_analytics_widget",
     "description": "It's a dhis2 dashboard application.",
     "homepage": ".",
     "version": "0.1.0",
@@ -9,7 +9,7 @@
         "48": "favicon-48x48.png"
     },
     "manifest.webapp": {
-        "name": "dhis2-analytics",
+        "name": "dhis2_analytics_widget",
         "description": "It's a dhis2 dashboard application.",
         "launch_path": "index.html",
         "appType": "DASHBOARD_WIDGET",
