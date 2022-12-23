@@ -16,11 +16,11 @@ const useFetch = () => {
                     const requiredData = [
                         {
                             "name": "Interval Since Last AnalyticsTable Success",
-                            "value": response.data.intervalSinceLastAnalyticsTableSuccess
+                            "value": response.data.intervalSinceLastAnalyticsTableSuccess,
                         },
                         {
                             "name": "Last Analytics Table Success",
-                            "value": dateFormater(new Date(response.data.lastAnalyticsTableSuccess))
+                            "value": dateFormater(new Date(response.data.lastAnalyticsTableSuccess)),
                         },
                         {
                             "name": "Server Date",
