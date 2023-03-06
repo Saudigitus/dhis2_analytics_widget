@@ -1,24 +1,5 @@
-# DHIS2 dashboard app skeleton
-This repository can be used as a foundation to create DHIS2 dashboard apps.
+# Setup a .env file before run the app
 
-## Install
-```bash
-npm install
-# or
-yarn install
-```
+``REACT_APP_BASE_URL = {YOUR BASE URL}``<br/>
+``REACT_APP_CREDENTIALS = user:pass``
 
-## Develop
-You need to log in to whatever `developmentServer` is set to in [src/index.js](./src/index.js#L6).
-```bash
-npm start
-# or
-yarn start
-```
-
-## Build
-```bash
-npm run build
-# or
-yarn build
-```
