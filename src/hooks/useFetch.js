@@ -15,15 +15,15 @@ const useFetch = () => {
                     setLoadig(false);
                     const requiredData = [
                         {
-                            "name": "Interval Since Last AnalyticsTable Success",
+                            "name": "Time since last update",
                             "value": response.data.intervalSinceLastAnalyticsTableSuccess,
                         },
                         {
-                            "name": "Last Analytics Table Success",
+                            "name": "Last update date and time",
                             "value": dateFormater(new Date(response.data.lastAnalyticsTableSuccess)),
                         },
                         {
-                            "name": "Server Date",
+                            "name": "Current date and time (Server)",
                             "value":dateFormater(new Date(response.data.serverDate))
                         }
                     ];

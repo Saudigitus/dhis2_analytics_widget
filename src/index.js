@@ -5,12 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { App } from './App'
 
 const developmentServer = 'https://debug.dhis2.org/2.36dev'
-const apiVersion = 36
 const rootElement = document.getElementById('root')
 
 const withBaseUrl = baseUrl => {
     ReactDOM.render(
-        <App baseUrl={baseUrl} apiVersion={apiVersion} />,
+        <App baseUrl={baseUrl}  />,
         rootElement
     )
     serviceWorker.unregister()

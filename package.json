@@ -1,8 +1,8 @@
 {
     "name": "dhis2_analytics_widget",
-    "description": "It's a dhis2 dashboard application.",
+    "description": "DHIS2 Widget App to show Analytics information.",
     "homepage": ".",
-    "version": "0.1.0",
+    "version": "1.0.2",
     "private": true,
     "license": "MIT",
     "icons": {
@@ -14,8 +14,8 @@
         "url": "https://saudigitus.org/"
     },
     "manifest.webapp": {
-        "name": "dhis2 analytics widget",
-        "description": "It's a dhis2 dashboard application.",
+        "name": "Analytics Info",
+        "description": "DHIS2 Widget App to show Analytics information.",
         "launch_path": "index.html",
         "appType": "DASHBOARD_WIDGET",
         "activities": {

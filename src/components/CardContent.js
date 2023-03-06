@@ -24,20 +24,7 @@ const CardContent = ({ data }) => {
                     </Col>
                 </Row>
             </Col>
-            <Col xs={12} className='w-100 action-area'>
-                <Row>
-                    <Col xs={12}>
-                        <Button variant="contained">Run analytics</Button>
-                    </Col>
-                    <Col xs={12}>
-                        <Button variant="contained">Sync</Button>
-                    </Col>
-                </Row>
-                <div className='large-screen'>
-                    <Button variant="contained">Run analytics</Button>
-                    <Button variant="contained">Sync</Button>
-                </div>
-            </Col>
+            
         </>
     )
 }
