@@ -1,4 +1,4 @@
-import { Button, Divider } from '@dhis2/ui-core'
+import { Divider } from '@dhis2/ui-core'
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 

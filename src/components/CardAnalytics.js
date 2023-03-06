@@ -8,16 +8,20 @@ import { CardContent } from './CardContent';
 export const CardAnalytics = () => {
     const { data, loading, error } = useFetch();
 
+    if(error){
+        
+    }
+
     return (
         <div className='card-analytics'>
             {
-                loading || data===null ?
+                loading || (data === null && error==null) ?
                     <div className='isLoading'>
-                        <CircularLoader/>
+                        <CircularLoader />
                     </div>
                     :
                     <Row className='w-100'>
-                                <CardContent data={data}/>
+                        <CardContent data={data} />
                     </Row>
             }
         </div>
