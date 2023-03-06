@@ -1,16 +1,21 @@
 {
     "name": "dhis2_analytics_widget",
-    "description": "It's a dhis2 dashboard application.",
+    "description": "DHIS2 Widget App to show Analytics information.",
     "homepage": ".",
-    "version": "0.1.0",
+    "version": "1.0.2",
     "private": true,
     "license": "MIT",
     "icons": {
         "48": "favicon-48x48.png"
     },
+    "developer": {
+        "name": "Saudigitus",
+        "email": "info@saudigitus.org",
+        "url": "https://saudigitus.org/"
+    },
     "manifest.webapp": {
-        "name": "dhis2_analytics_widget",
-        "description": "It's a dhis2 dashboard application.",
+        "name": "Analytics Info",
+        "description": "DHIS2 Widget App to show Analytics information.",
         "launch_path": "index.html",
         "appType": "DASHBOARD_WIDGET",
         "activities": {
@@ -22,7 +27,10 @@
     "dependencies": {
         "@dhis2/ui-core": "^3.6.3",
         "@material-ui/core": "^4.12.4",
+        "@material-ui/icons": "^4.11.3",
+        "axios": "^1.2.1",
         "bootstrap": "4.6.0",
+        "dateformat": "^5.0.3",
         "react": "^16.8.6",
         "react-bootstrap": "^2.7.0",
         "react-dom": "^16.8.6",
@@ -32,7 +40,7 @@
         "start": "react-scripts start",
         "prebuild": "rimraf build",
         "build": "react-scripts build && d2-manifest package.json build/manifest.webapp",
-        "postbuild": "rimraf app-name.zip && cd build && bestzip ../app-name.zip *",
+        "postbuild": "rimraf dhis2-analytics-widget.zip && cd build && bestzip ../dhis2-analytics-widget.zip *",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
